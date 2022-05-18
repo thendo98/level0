@@ -1,6 +1,6 @@
 function maximum(){
     let max = arguments[0];
-    for(var i=1; i< arguments.length; i++){
+    for(let i=1; i< arguments.length; i++){
         if (arguments[i]>max){
             max = arguments[i]
         }

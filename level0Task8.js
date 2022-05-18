@@ -1,6 +1,6 @@
 function numberToHourMinute(number){
-    var hour = 0;
-    var minutes = 0;
+    let hour = 0;
+    let minutes = 0;
 
     while (number > 0) {
         if (number >= 60) {
@@ -16,7 +16,7 @@ function numberToHourMinute(number){
 }
 
 function pluralSingular(hour, minutes){
-    if (hour > 1 && minutes > 1 || hour == 0 && minutes == 0)
+    if (hour > 1 && minutes > 1 || hour == 0 || minutes == 0)
         return `${hour} hours, ${minutes} minutes`;
     if (hour <= 1 && minutes > 1)
         return `${ hour} hour, ${minutes} minutes`;
@@ -25,6 +25,7 @@ function pluralSingular(hour, minutes){
     return `${hour} hour, ${minutes} minute`;
 }
 
+console.log(numberToHourMinute(10));
 console.log(numberToHourMinute(61));
 console.log(numberToHourMinute(71));
 console.log(numberToHourMinute(133));

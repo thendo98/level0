@@ -1,6 +1,6 @@
 function printVowels(word) {
     word = word.toLowerCase();
-    let vowels = [];
+    const vowels = [];
     for (i = 0; i < word.length; i++){
         const letter = word[i];
         if (isVowel(letter)){
